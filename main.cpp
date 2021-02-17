@@ -14,5 +14,6 @@ int main(){
     Command* x;
     while(x = parser.parse(cin)){
         x->execute();
+        delete x;
     }
 }
